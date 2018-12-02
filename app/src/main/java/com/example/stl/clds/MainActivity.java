@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 
 
 
@@ -16,4 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+=======
+    }
+>>>>>>> bf011dad7b5f4549e1f333b3e92c6e74d7f9533c
 }
