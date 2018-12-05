@@ -6,55 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:gravity="center_horizontal"
-        android:text="HELLO EARTHLINGS"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:fontFamily="casual"
-=======
-        android:text="Hello World!"
->>>>>>> bf011dad7b5f4549e1f333b3e92c6e74d7f9533c
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-<<<<<<< HEAD
-        android:id="@+id/button_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENTER"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="376dp" />
-=======
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="122dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="365dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:srcCompat="@android:color/black"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="223dp" />
->>>>>>> bf011dad7b5f4549e1f333b3e92c6e74d7f9533c
 
 </android.support.constraint.ConstraintLayout>
