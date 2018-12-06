@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/bio_group"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/photo_group"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_horizontal"
+        android:text="@string/bio_nonsense"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toBottomOf="@id/photo_group"
+        app:layout_constraintTop_toBottomOf="@+id/photo_group" />
+
+    <ImageView
+        android:id="@+id/photo_group"
+        android:layout_width="308dp"
+        android:layout_height="241dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group" />
+
+</RelativeLayout>
