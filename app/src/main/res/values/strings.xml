@@ -1,6 +1,32 @@
-<resources>
+<resources xmlns:name="http://schemas.android.com/tools">
     <string name="app_name">FirstTemplateDraft</string>
     <string name="bio_danny">I am an artist from Queens, passionate about all forms of art who is currently working to fuse my interests in tech and design into a viable and successful career.</string>
-    <string name="bio_caroline">Caroline hails from Flushing, and is a garlic fiend to no one’s surprise. There’s a reason why she’s always chewing gum. She expects to live until she’s 101 as a spritely elderly lady. And in between, build some unforgettable codes - both insanely good and terribly bad.</string>
+
+
+    <string name="bio_caroline">Caroline hails from Flushing, and is a garlic fiend to no one’s surprise.
+        There’s a reason why she’s always chewing gum. She expects to live until she’s 101 as a spritely elderly lady.
+        And in between, build some unforgettable codes - both insanely good and terribly bad.
+    </string>
+
+    <string name="bio_linda">Linda is 28 years old, fluent in Spanish and English and a mother
+        of two.  She recently got engaged,had her second daughter, and got accepted into this coding program (2018 has been
+        a great year!).  On her down time she enjoys watching Netflix, going to Target, and making Starbucks runs (Vanilla chai
+        all day).  In the future, she hopes to have a lucrative career with the opportunities to move from
+        her home on Long Island to a place with a much warmer climate year round.
+    </string>
+
+    <string name="bio_sanje">Born in Nepal and currently residing in Queens with my family.
+        I am many things to many people, but I am most proud to be a good son and a loving brother.
+    </string>
+
+
+
+    <string name="PathFinder_Linda_Link">Pathfinder</string>
+    <string name="HauntedHouse_Linda_Link">Haunted House</string>
+    <string name="MadLibs_Linda_Link">MadLibs</string>
+    <string name="drawer_item_caroline">Caroline</string>
+    <string name="drawer_item_linda">Linda</string>
+    <string name="drawer_item_danny">Danny</string>
+    <string name="drawer_item_sanje">Sanje</string>
 
 </resources>
