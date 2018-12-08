@@ -38,7 +38,7 @@ public class LindaActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.template_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.project1:
