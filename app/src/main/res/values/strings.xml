@@ -1,7 +1,9 @@
 <resources xmlns:name="http://schemas.android.com/tools">
     <string name="app_name">FirstTemplateDraft</string>
+    <string name="group_goal">Our goal is to showcase each of our members as accomplished and capable individuals, and to elevate our identities as a team.</string>
     <string name="bio_danny">I am an artist from Queens, passionate about all forms of art who is currently working to fuse my interests in tech and design into a viable and successful career.</string>
     <string name="bio_template">alsdkfja;ldskfja;ldksfja;owein;laksdjf;oaiejf;alekjf;aein;alksdjf;aoiejf;alkdjf;aoiefj;aeifjalksdjf;alksdfja;lsfje;oainv;lkef;lkjdf;aioejfa;eifj;aoiejfa;lkdfjaeoinba;ldkfja;oiefja;eifjal;ksdfjae;oif</string>
+
 
     <string name="bio_caroline">Caroline hails from Flushing, and is a garlic fiend to no one’s surprise.
         There’s a reason why she’s always chewing gum. She expects to live until she’s 101 as a spritely elderly lady.
@@ -28,7 +30,10 @@
     <string name="drawer_item_danny">Danny</string>
     <string name="drawer_item_sanje">Sanje</string>
 
+<<<<<<< Updated upstream
     <string name="group_goal">Our goal is to showcase each of our members as accomplished and capable individuals, and to elevate our identities as a team.</string>
     <string name="linkedin_caroline">https://www.linkedin.com/in/carolinehkang/</string>
+=======
+>>>>>>> Stashed changes
 
 </resources>
