@@ -35,14 +35,12 @@
         <activity android:name=".CarolineActivity"
             android:parentActivityName=".MainActivity"/>
 
-
         <activity android:name=".LindaActivity"
             android:parentActivityName=".MainActivity">
 
         </activity>
         <activity android:name=".SanjeActivity"
             android:parentActivityName=".MainActivity">
-
 
         </activity>
 
