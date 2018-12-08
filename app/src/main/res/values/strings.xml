@@ -2,4 +2,16 @@
     <string name="app_name">FirstTemplateDraft</string>
     <string name="bio_nonsense">Lalalalalalala I wannna be forever young do you really wanna live forever live forever live forever forever young I wanna be foreverrrr young blahblahblah nanananananananannana</string>
     <string name="bio_danny">I am an artist from Queens, passionate about all forms of art who is currently working to fuse my interests in tech and design into a viable and successful career.</string>
+    <string name="bio_linda">Linda is 28 years old, fluent in Spanish and English and a mother
+        of two.  She recently got engaged,had her second daughter, and got accepted into this coding program (2018 has been
+        a great year!).  On her down time she enjoys watching Netflix, going to Target, and making Starbucks runs (Vanilla chai
+        all day).  In the future, she hopes to have a lucrative career with the opportunities to move from
+        her home on Long Island to a place with a much warmer climate year round.</string>
+    <string name="PathFinder_Linda_Link">Pathfinder</string>
+    <string name="HauntedHouse_Linda_Link">Haunted House</string>
+    <string name="MadLibs_Linda_Link">MadLibs</string>
+    <string name="drawer_item_caroline">Caroline</string>
+    <string name="drawer_item_linda">Linda</string>
+    <string name="drawer_item_danny">Danny</string>
+    <string name="drawer_item_sanje">Sanje</string>
 </resources>

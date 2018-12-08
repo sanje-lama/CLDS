@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 //start your activity from main here**
                                 return true;
                             case R.id.nav_linda:
+                                startActivity(new Intent(MainActivity.this, LindaActivity.class));
                                 mDrawerLayout.closeDrawers();
 //start your activity from main here**
                                 return true;
