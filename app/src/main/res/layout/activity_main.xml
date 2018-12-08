@@ -1,23 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
-    <FrameLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/drawer_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
-    </FrameLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/drawer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drawer_toolbar"
+            app:srcCompat="@drawable/group" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="@string/group_goal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </android.support.constraint.ConstraintLayout>
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
     <android.support.design.widget.NavigationView
