@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.widget.ImageView;
@@ -29,6 +30,7 @@ ImageView myImage;
 
         myView.setText(R.string.bio_caroline);
         myImage.setImageResource(R.drawable.caroline);
+//        myView.setMovementMethod(new ScrollingMovementMethod());
 
     }
 
