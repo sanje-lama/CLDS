@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
                                 return true;
                             case R.id.nav_sanje:
                                 mDrawerLayout.closeDrawers();
-//start your activity from main here**
+                                startActivity(new Intent(MainActivity.this, SanjeActivity.class));
+
                                 return true;
 
                             default:
