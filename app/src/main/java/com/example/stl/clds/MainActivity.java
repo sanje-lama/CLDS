@@ -1,16 +1,19 @@
-package com.example.carolinekang.drafttwoclds;
+package com.example.stl.clds;
 
-import android.graphics.Color;
-import android.support.constraint.ConstraintLayout;
+import android.content.Intent;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
-import java.util.Random;
-import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
+
+    private DrawerLayout mDrawerLayout;
 
 
     @Override
@@ -18,15 +21,56 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mDrawerLayout = findViewById(R.id.drawer_layout);
 
-        android.support.v7.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.drawer_toolbar);
         setSupportActionBar(toolbar);
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
+
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        // set item as selected to persist highlight
+
+                        switch (menuItem.getItemId()) {
+                            case R.id.nav_caroline:
+                                mDrawerLayout.closeDrawers();
+//start your activity from main here**
+                                return true;
+                            case R.id.nav_linda:
+                                mDrawerLayout.closeDrawers();
+//start your activity from main here**
+                                return true;
+                            case R.id.nav_danny:
+                                mDrawerLayout.closeDrawers();
+                                startActivity(new Intent(MainActivity.this,DannyActivity.class));
+                                return true;
+                            case R.id.nav_sanje:
+                                mDrawerLayout.closeDrawers();
+//start your activity from main here**
+                                return true;
+
+                            default:
+                                return false;
+
+                        }
+
+                    }
+                });
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu, menu);
-        return true;
-
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mDrawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
+
+
 }

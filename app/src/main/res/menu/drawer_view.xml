@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_caroline"
+            android:icon="@drawable/ic_nav_bio"
+            android:title="Caroline" />
+        <item
+            android:id="@+id/nav_linda"
+            android:icon="@drawable/ic_nav_bio"
+            android:title="Linda" />
+        <item
+            android:id="@+id/nav_danny"
+            android:icon="@drawable/ic_nav_bio"
+            android:title="Danny" />
+        <item
+            android:id="@+id/nav_sanje"
+            android:icon="@drawable/ic_nav_bio"
+            android:title="Sanje" />
+    </group>
+</menu>
