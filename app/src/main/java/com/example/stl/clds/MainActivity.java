@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         switch (menuItem.getItemId()) {
                             case R.id.nav_caroline:
                                 mDrawerLayout.closeDrawers();
+                                startActivity(new Intent(MainActivity.this, CarolineActivity.class));
 //start your activity from main here**
                                 return true;
                             case R.id.nav_linda:

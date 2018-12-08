@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".DannyActivity"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CarolineActivity"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 
