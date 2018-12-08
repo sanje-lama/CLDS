@@ -1,10 +1,8 @@
 package com.example.stl.clds;
 
 import android.content.Intent;
-<<<<<<< Updated upstream
+
 import android.graphics.Color;
-=======
->>>>>>> Stashed changes
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,13 +13,11 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-<<<<<<< Updated upstream
+
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
-=======
 import android.webkit.WebView;
->>>>>>> Stashed changes
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -103,8 +99,7 @@ public class CarolineActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-<<<<<<< Updated upstream
-=======
+
     }
 
     private void firstProject() {
@@ -120,22 +115,7 @@ public class CarolineActivity extends AppCompatActivity {
     private void thirdProject() {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/garlicfiendck/Java_Bank_Pursuit_HW_Kang_Caroline"));
         startActivity(intent);
->>>>>>> Stashed changes
-    }
 
-    private void firstProject() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/garlicfiendck/CYOA_Pursuit_HW_Kang_Caroline"));
-        startActivity(intent);
-    }
-
-    private void secondProject() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/garlicfiendck/Story_App_HW_Kang_Caroline"));
-        startActivity(intent);
-    }
-
-    private void thirdProject() {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/garlicfiendck/Java_Bank_Pursuit_HW_Kang_Caroline"));
-        startActivity(intent);
     }
 
 }
