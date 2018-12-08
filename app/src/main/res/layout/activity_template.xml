@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/colorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -12,44 +13,59 @@
     <ImageView
         android:id="@+id/photo_group"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="239dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/group" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="89dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photo_group">
+        app:layout_constraintTop_toBottomOf="@+id/photo_group"
+        app:layout_constraintVertical_bias="0.179">
 
         <TextView
             android:id="@+id/bio_group"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:gravity="center_horizontal"
-            android:text="@string/bio_caroline"
-            android:textSize="18sp"
+            android:text="@string/bio_template"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/teamTextSize"
             android:textStyle="bold"
             android:typeface="monospace"
-            app:fontFamily="serif-monospace"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:fontFamily="serif-monospace" />
     </ScrollView>
+
+    <Button
+        android:id="@+id/linkedin"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="LinkedIn Profile"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo_group"
+        app:layout_constraintVertical_bias="0.828" />
+
 </android.support.constraint.ConstraintLayout>
