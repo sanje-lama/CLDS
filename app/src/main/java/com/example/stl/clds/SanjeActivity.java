@@ -3,12 +3,15 @@ package com.example.stl.clds;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Random;
 
 public class SanjeActivity extends AppCompatActivity {
 
@@ -31,6 +34,11 @@ public class SanjeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.colorLayout);
+        int[] groupColor = getResources().getIntArray(R.array.fav_color);
+        int favColor = groupColor[new Random().nextInt(groupColor.length)];
+        constraintLayout.setBackgroundColor(favColor);
     }
 
 
