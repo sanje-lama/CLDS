@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@color/colorPrimary"
-        app:srcCompat="@drawable/clds_logo" />
+        app:srcCompat="@drawable/clds"/>
+
 
     <TextView
         android:layout_width="match_parent"
