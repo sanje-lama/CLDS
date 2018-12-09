@@ -54,7 +54,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:fontFamily="serif-monospace"
+            android:textSize="27sp"
+            android:textColor="@color/colorPrimary"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            />
+
     </android.support.constraint.ConstraintLayout>
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
