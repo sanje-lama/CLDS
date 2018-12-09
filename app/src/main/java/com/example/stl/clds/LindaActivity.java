@@ -48,7 +48,7 @@ public class LindaActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(getString(R.string.linkedin_caroline)));
+                intent.setData(Uri.parse(getString(R.string.linkedin_linda)));
                 startActivity(intent);
             }
         });
@@ -57,8 +57,13 @@ public class LindaActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.template_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+            menu.getItem(0).setTitle("PathFinder");
+            menu.getItem(1).setTitle("Haunted House");
+            menu.getItem(2).setTitle("Mad Libs");
+
+            return super.onCreateOptionsMenu(menu);
+        }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

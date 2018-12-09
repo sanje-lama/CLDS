@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
 
-        ConstraintLayout cl = findViewById(R.id.drawer_layout);
+
         int[] groupColor = getResources().getIntArray(R.array.fav_color);
         int groupFavColor = groupColor[new Random().nextInt(groupColor.length)];
         mDrawerLayout.setBackgroundColor(groupFavColor);
