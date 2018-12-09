@@ -1,9 +1,12 @@
 package com.example.stl.clds;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,13 +34,51 @@ public class SanjeActivity extends AppCompatActivity {
     }
 
 
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            MenuInflater inflater = getMenuInflater();
-            inflater.inflate(R.menu.template_menu, menu);
-            return true;
+
+    @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+                MenuInflater inflater = getMenuInflater();
+                inflater.inflate(R.menu.template_menu, menu);
+                menu.getItem(0).setTitle("Nasa");
+                menu.getItem(1).setTitle("Bank");
+                menu.getItem(2).setTitle("Mad-Libs");
+                return super.onCreateOptionsMenu(menu);
+            }
+            @Override
+            public boolean onOptionsItemSelected(MenuItem item) {
+                int id = item.getItemId();
+                switch (id) {
+                    case R.id.project1:
+                        firstProject();
+                        break;
+                    case R.id.project2:
+                        secondProject();
+                        break;
+                    case R.id.project3:
+                        thirdProject();
+                        break;
+                }
+                return super.onOptionsItemSelected(item);
+
+            }
+
+            private void firstProject() {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Nasa"));
+                startActivity(intent);
+            }
+
+            private void secondProject() {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Bank-game.git"));
+                startActivity(intent);
+            }
+
+            private void thirdProject() {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Mad-Libs"));
+                startActivity(intent);
 
 
-        }
+
+
+            }
     }
 
