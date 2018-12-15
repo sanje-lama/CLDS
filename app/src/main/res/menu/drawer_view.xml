@@ -3,19 +3,19 @@
     <group >
         <item
             android:id="@+id/nav_caroline"
-            android:icon="@drawable/icon_caroline"
+            android:icon="@drawable/caroline_icon"
             android:title="Caroline" />
         <item
             android:id="@+id/nav_linda"
-            android:icon="@drawable/icon_linda"
+            android:icon="@drawable/linda_icon"
             android:title="Linda" />
         <item
             android:id="@+id/nav_danny"
-            android:icon="@drawable/icon_danny"
+            android:icon="@drawable/danny_icon"
             android:title="Danny" />
         <item
             android:id="@+id/nav_sanje"
-            android:icon="@drawable/icon_sanje"
+            android:icon="@drawable/sanje_icon"
             android:title="Sanje" />
     </group>
 </menu>
