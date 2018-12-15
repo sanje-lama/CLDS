@@ -44,18 +44,18 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        // set item as selected to persist highlight
+
 
                         switch (menuItem.getItemId()) {
                             case R.id.nav_caroline:
                                 mDrawerLayout.closeDrawers();
                                 startActivity(new Intent(MainActivity.this, CarolineActivity.class));
-//start your activity from main here**
+
                                 return true;
                             case R.id.nav_linda:
                                 startActivity(new Intent(MainActivity.this, LindaActivity.class));
                                 mDrawerLayout.closeDrawers();
-//start your activity from main here**
+
                                 return true;
                             case R.id.nav_danny:
                                 mDrawerLayout.closeDrawers();

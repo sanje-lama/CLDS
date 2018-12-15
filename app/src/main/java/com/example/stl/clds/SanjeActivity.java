@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -35,10 +37,23 @@ public class SanjeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+        Button button = (Button) findViewById(R.id.linkedin);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(getString(R.string.Linkedin_sanje)));
+                startActivity(intent);
+            }
+        });
+
         ConstraintLayout constraintLayout = findViewById(R.id.colorLayout);
         int[] groupColor = getResources().getIntArray(R.array.fav_color);
         int favColor = groupColor[new Random().nextInt(groupColor.length)];
         constraintLayout.setBackgroundColor(favColor);
+
+
     }
 
 
@@ -57,36 +72,22 @@ public class SanjeActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 switch (id) {
                     case R.id.project1:
-                        firstProject();
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Nasa"));
+                        startActivity(intent);
                         break;
                     case R.id.project2:
-                        secondProject();
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Bank-game"));
+                        startActivity(intent1);
                         break;
                     case R.id.project3:
-                        thirdProject();
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Mad-Libs"));
+                        startActivity(intent2);
                         break;
                 }
                 return super.onOptionsItemSelected(item);
 
             }
 
-            private void firstProject() {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Nasa"));
-                startActivity(intent);
-            }
 
-            private void secondProject() {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Bank-game.git"));
-                startActivity(intent);
-            }
-
-            private void thirdProject() {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sanje-lama/Mad-Libs"));
-                startActivity(intent);
-
-
-
-
-            }
     }
 
